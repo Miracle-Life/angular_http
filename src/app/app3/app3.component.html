@@ -1,0 +1,14 @@
+<p>app3 works!</p>
+
+Имя пользователя Github: <input type="text" [(ngModel)]="userName">
+<button (click)="search()">Поиск</button>
+<div *ngIf="response">
+  <img src="{{response.avatar_url}}">
+  <p>Имя: {{response.login}}</p>
+  <p>Репозитории:{{response.public_repos}}</p>
+  <p>Email:{{response.email}}</p>
+  <p>Биография:{{response.bio}}</p>
+  <p>Локация:{{response.location}}</p>
+  <p>Дата создания:{{response.created_at}}</p>
+  <p>Последнее изменение в репозиториях:{{response.updated_at}}</p>
+</div>
